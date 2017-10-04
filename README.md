@@ -51,4 +51,10 @@ The following properties are bindable:
 The control has the following event:
 - OnValueChanged: Fired when the rate value is changed.
 
+c/ Different size of stars
 
+If you want 32px stars:
+- Bind StarWidth and StarHeight to 32
+- add a 'bigstars' class to your control
+
+You may overwrite css with your custom icons.
