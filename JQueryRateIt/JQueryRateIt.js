@@ -5,7 +5,7 @@
 
 Aspectize.Extend("JQueryRateIt", {
     Properties: { Value: 0, EditMode: true, Min: 0, Max: 5, Step: 0.5, Resetable: false, StarWidth: 16, StarHeight: 16 },
-    Events: ['OnValueChanged'],
+    Events: ['OnRate'],
     Init: function (elem) {
 
         var option = {
@@ -23,6 +23,7 @@ Aspectize.Extend("JQueryRateIt", {
 
         $(elem).bind('rated', function (event, value) {
             Aspectize.UiExtensions.ChangeProperty(elem, 'Value', value);
+            Aspectize.UiExtensions.Notify(elem, 'OnRate', value);
         });
 
         Aspectize.UiExtensions.AddPropertyChangeObserver(elem, function (sender, arg) {
