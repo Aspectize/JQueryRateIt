@@ -1,7 +1,7 @@
 # JQueryRateIt
 Aspectize Extension of RateIt plugin https://github.com/gjunge/rateit.js
 
-## 1 - Download (or Clone repo and Build project) 
+## 1 - Download 
 
 Download extension package from aspectize.com:
 - in the portal, goto extension section
